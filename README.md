@@ -1,46 +1,13 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Linked List Data Structure
-====
+## Node Ecosystem
 
-## To Submit this Assignment
-  * Do all your work in a public repository called `data-structures-and-algorithms`
-  * write all of your code in a directory named `linked-lists`
-  * push to your repository
-  * submit a pull request to this repository
-  * submit a link to your PR in canvas
-  * write a question and observation on canvas
+### Problem Domain
+Create a module named arithmetic.js that exports two functions, sum and sub. Sum should take in two numbers, add them together, and return a single number result. Sub should also take in two numbers, subtract them, and return a single number result. If any of the provided arguments for either function is not a number, both should return null.
 
-## Requirements  
-#### Configuration  
-  <!-- list of files, configurations, tools, etc that are required -->
-  Your lab directory must include  
-  * **index.js** -- The entry point to your module
-  * **README.md** -- with a documentation about your lab
-  * **.gitignore** -- with a robust .gitignore
-  * **.eslintrc** -- with the class .eslintrc file
-  * **.eslintignore** -- with the class .eslintignore
-  * **.travis.yml** -- travis-ci instructions
-  * **.package.json** -- with all dependencies and dev-dependencies
-  * **lib/** -- directory for holding your programs helper modules
-  * **__tests__/** -- directory for holding your programs unit and integration tests
+### Test cases
+A total of four test cases are used here. The first two, which I'll refer to as "happy path", ensure that the return value of either of the functions provides the correct result. The second two test cases, referred to as "sad path", ensure that the return value is null in the event that one of the provided parameters is not a number.
 
-#### Testing  
-  * write at least two tests for each method of the Singly Linked List Data Structure
-  * organize your tests into appropriate describe/it blocks for test output readability
-
-####  Documentation  
-  * in your README, write documentation for you data structures
-  * your documentation should includes code block useage examples
-  * provide instructions for:
-    * installing and using your data structure
-    * accessing each method
-    * running your tests
-
-#### Feature Tasks  
-* implement a Singly Linked List (SLL) data structure
-* implement `remove(offset)` methods to the SLL class
-  * offset is an integer representing how many nodes to traverse before removal
-	* the head of the linked lists represents offset 0
-* in a comment within each function, note the it's Big-O runtime
-
-#### Stretch Goals
-* implement `append(value)`, `prepend(value)`, `reverse()` methods to the SLL class
+### Technologies used
+* JestJs
+* Node
+* Travis CI
+* Eslint
