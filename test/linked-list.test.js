@@ -21,10 +21,7 @@ describe('#linked-list.js', () => {
 
   describe('Sad path', () => {
     test('Throw error if list is empty', () => {
-
-      expect(emptyList.remove('value 2')).toEqual(() => {
-        '__ERROR__ The list is empty!'
-      });
+      expect(() => emptyList.remove('value 2')).toThrow();
     });
   });
 });
